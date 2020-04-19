@@ -1,0 +1,21 @@
+html{
+  height: 100%;
+  
+}
+.container{
+  width: 60%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -160px;
+  margin-left:-403px;
+}
+table {
+  width: 100%;
+}
+/* Structure */
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}

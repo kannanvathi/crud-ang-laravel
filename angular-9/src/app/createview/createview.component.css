@@ -1,0 +1,25 @@
+.example-form {
+  position: absolute;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+  margin-left: -270px;
+  margin-top: -83px;
+  box-shadow: 1px 1px 10px #ccc;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.mat-form-field{
+  margin-right: 10px;
+}
+.example-button-row{
+  text-align: center;
+  margin-top: 15px;
+}

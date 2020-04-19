@@ -1,0 +1,27 @@
+
+<div class="example-container" *ngIf = "editElement">
+        <form class="example-form" #form="ngForm"  novalidate>
+          <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name" name="name" [(ngModel)] = 'editElement.name' value="">
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" name="email" [(ngModel)] = 'editElement.email' required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+              <mat-label>Enter your password</mat-label>
+              <input matInput [type]="hide ? 'password' : 'text'" name="password" [(ngModel)] = 'editElement.email'>
+              <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+              </button>
+            </mat-form-field>
+              <div class="example-button-row">
+                <button type="submit" mat-flat-button (click) = update() color="primary" >Update</button>
+                <button mat-flat-button color="warn" (click) = "closeView()">close</button>
+              </div>
+          </form>
+        </div>
+        
+      
